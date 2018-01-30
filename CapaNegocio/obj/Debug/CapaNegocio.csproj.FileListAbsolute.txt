@@ -1,0 +1,8 @@
+C:\Users\USER\source\repos\RRHH\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\USER\source\repos\RRHH\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\USER\source\repos\RRHH\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\USER\source\repos\RRHH\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\USER\source\repos\RRHH\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\USER\source\repos\RRHH\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\RRHH\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\USER\source\repos\RRHH\CapaNegocio\obj\Debug\CapaNegocio.pdb

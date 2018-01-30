@@ -1,0 +1,15 @@
+C:\Users\USER\source\repos\RRHH\RRHH\bin\Debug\RRHH.exe.config
+C:\Users\USER\source\repos\RRHH\RRHH\bin\Debug\RRHH.exe
+C:\Users\USER\source\repos\RRHH\RRHH\bin\Debug\RRHH.pdb
+C:\Users\USER\source\repos\RRHH\RRHH\bin\Debug\CapaPresentacion.dll
+C:\Users\USER\source\repos\RRHH\RRHH\bin\Debug\CapaNegocio.dll
+C:\Users\USER\source\repos\RRHH\RRHH\bin\Debug\CapaDatos.dll
+C:\Users\USER\source\repos\RRHH\RRHH\bin\Debug\CapaPresentacion.pdb
+C:\Users\USER\source\repos\RRHH\RRHH\bin\Debug\CapaNegocio.pdb
+C:\Users\USER\source\repos\RRHH\RRHH\bin\Debug\CapaDatos.pdb
+C:\Users\USER\source\repos\RRHH\RRHH\obj\Debug\RRHH.csprojResolveAssemblyReference.cache
+C:\Users\USER\source\repos\RRHH\RRHH\obj\Debug\RRHH.Properties.Resources.resources
+C:\Users\USER\source\repos\RRHH\RRHH\obj\Debug\RRHH.csproj.GenerateResource.Cache
+C:\Users\USER\source\repos\RRHH\RRHH\obj\Debug\RRHH.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\RRHH\RRHH\obj\Debug\RRHH.exe
+C:\Users\USER\source\repos\RRHH\RRHH\obj\Debug\RRHH.pdb
