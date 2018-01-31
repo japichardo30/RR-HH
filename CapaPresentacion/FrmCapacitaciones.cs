@@ -20,6 +20,10 @@ namespace CapaPresentacion
         public FrmCapacitaciones()
         {
             InitializeComponent();
+            //Contenido del ComboBox
+            cmbNivel.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbNivel.Items.Add("Certificacion");
+            cmbNivel.Items.Add("Diplomado");
             this.ttMensaje.SetToolTip(this.txtDescripcion, "Ingrese el nombre de la capacitacion tomada");
         }
 
@@ -271,6 +275,11 @@ namespace CapaPresentacion
             this.txtInstitucion.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["Institucion"].Value);
 
             this.tabControl1.SelectedIndex = 1;
+        }
+
+        private void cmbNivel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
