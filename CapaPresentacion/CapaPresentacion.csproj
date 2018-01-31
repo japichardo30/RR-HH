@@ -43,6 +43,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="FrmCapacitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCapacitaciones.Designer.cs">
+      <DependentUpon>FrmCapacitaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCompetencias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmCapacitaciones.resx">
+      <DependentUpon>FrmCapacitaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCompetencias.resx">
       <DependentUpon>FrmCompetencias.cs</DependentUpon>
     </EmbeddedResource>
