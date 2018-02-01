@@ -96,7 +96,7 @@ namespace CapaDatos
                 SqlParameter ParFechaFin = new SqlParameter();
                 ParFechaFin.ParameterName = "@fecha_fin";
                 ParFechaFin.SqlDbType = SqlDbType.Date;
-                ParFechaFin.Value = Capacitaciones.Fecha_ini;
+                ParFechaFin.Value = Capacitaciones.Fecha_fin;
                 SqlCmd.Parameters.Add(ParFechaFin);
 
                 //Recibe sexto campo
@@ -104,7 +104,7 @@ namespace CapaDatos
                 ParInstitucion.ParameterName = "@institucion";
                 ParInstitucion.SqlDbType = SqlDbType.VarChar;
                 ParInstitucion.Size = (120);
-                ParInstitucion.Value = Capacitaciones.Fecha_ini;
+                ParInstitucion.Value = Capacitaciones.Institucion;
                 SqlCmd.Parameters.Add(ParInstitucion);
 
 
@@ -173,7 +173,7 @@ namespace CapaDatos
                 SqlParameter ParFechaFin = new SqlParameter();
                 ParFechaFin.ParameterName = "@fecha_fin";
                 ParFechaFin.SqlDbType = SqlDbType.Date;
-                ParFechaFin.Value = Capacitaciones.Fecha_ini;
+                ParFechaFin.Value = Capacitaciones.Fecha_fin;
                 SqlCmd.Parameters.Add(ParFechaFin);
 
                 //Recibe sexto campo
@@ -181,7 +181,7 @@ namespace CapaDatos
                 ParInstitucion.ParameterName = "@institucion";
                 ParInstitucion.SqlDbType = SqlDbType.VarChar;
                 ParInstitucion.Size = (120);
-                ParInstitucion.Value = Capacitaciones.Fecha_ini;
+                ParInstitucion.Value = Capacitaciones.Institucion;
                 SqlCmd.Parameters.Add(ParInstitucion);
 
 

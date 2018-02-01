@@ -30,7 +30,7 @@ namespace CapaNegocio
             Obj.Fecha_ini = fecha_ini;
             Obj.Fecha_fin = fecha_fin;
             Obj.Institucion = institucion;
-            return Obj.Insertar(Obj);
+            return Obj.Editar(Obj);
         }
 
         public static string Eliminar(int idcapacitaciones)
