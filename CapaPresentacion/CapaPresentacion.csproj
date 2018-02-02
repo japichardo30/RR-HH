@@ -55,6 +55,12 @@
     <Compile Include="FrmCompetencias.Designer.cs">
       <DependentUpon>FrmCompetencias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmExperencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExperencia.Designer.cs">
+      <DependentUpon>FrmExperencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmIdiomas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCompetencias.resx">
       <DependentUpon>FrmCompetencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExperencia.resx">
+      <DependentUpon>FrmExperencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIdiomas.resx">
       <DependentUpon>FrmIdiomas.cs</DependentUpon>

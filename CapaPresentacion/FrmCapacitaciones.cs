@@ -22,8 +22,12 @@ namespace CapaPresentacion
             InitializeComponent();
             //Contenido del ComboBox
             cmbNivel.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbNivel.Items.Add("Certificacion");
-            cmbNivel.Items.Add("Diplomado");
+            cmbNivel.Items.Add("Grado");
+            cmbNivel.Items.Add("Post Grado");
+            cmbNivel.Items.Add("Maestria");
+            cmbNivel.Items.Add("Doctorado");
+            cmbNivel.Items.Add("Tecnico");
+            cmbNivel.Items.Add("Gestion");
             this.ttMensaje.SetToolTip(this.txtDescripcion, "Ingrese el nombre de la capacitacion tomada");
         }
 
