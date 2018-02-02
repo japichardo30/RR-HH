@@ -237,5 +237,36 @@ namespace CapaPresentacion
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
+
+        private void dataListado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == dataListado.Columns["Eliminar"].Index)
+            {
+                DataGridViewCheckBoxCell ChkEliminar = (DataGridViewCheckBoxCell)dataListado.Rows[e.RowIndex].Cells["Eliminar"];
+                ChkEliminar.Value = !Convert.ToBoolean(ChkEliminar.Value);
+            }
+        }
+
+        private void dataListado_DoubleClick(object sender, EventArgs e)
+        {
+            this.txtIdExperencia.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["id_experiencia"].Value);
+            this.txtEmpresa.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["Empresa"].Value);
+            this.txtPuesto.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["Puesto_Ocupado"].Value);
+            this.txtSalario.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["Salario"].Value);
+
+            this.tabControl1.SelectedIndex = 1;
+        }
+
+        private void chkEliminar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkEliminar.Checked)
+            {
+                this.dataListado.Columns[0].Visible = true;
+            }
+            else
+            {
+                this.dataListado.Columns[0].Visible = false;
+            }
+        }
     }
 }

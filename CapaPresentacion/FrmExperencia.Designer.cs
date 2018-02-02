@@ -78,9 +78,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(11, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 29);
+            this.label1.Size = new System.Drawing.Size(164, 29);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Experencias";
+            this.label1.Text = "Experiencias";
             // 
             // tabControl1
             // 
@@ -125,6 +125,8 @@
             this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataListado.Size = new System.Drawing.Size(659, 150);
             this.dataListado.TabIndex = 7;
+            this.dataListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListado_CellContentClick);
+            this.dataListado.DoubleClick += new System.EventHandler(this.dataListado_DoubleClick);
             // 
             // Eliminar
             // 
@@ -150,6 +152,7 @@
             this.chkEliminar.TabIndex = 5;
             this.chkEliminar.Text = "Eliminar";
             this.chkEliminar.UseVisualStyleBackColor = true;
+            this.chkEliminar.CheckedChanged += new System.EventHandler(this.chkEliminar_CheckedChanged);
             // 
             // btnImprimir
             // 

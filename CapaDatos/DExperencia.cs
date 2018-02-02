@@ -58,12 +58,12 @@ namespace CapaDatos
                 //Establecer el comando
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "spinsertar_experencia";
+                SqlCmd.CommandText = "spinsertar_experiencia";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 //Recibe primer campo
                 SqlParameter ParIdExperencia = new SqlParameter();
-                ParIdExperencia.ParameterName = "@id_experencia";
+                ParIdExperencia.ParameterName = "@id_experiencia";
                 ParIdExperencia.SqlDbType = SqlDbType.Int;
                 ParIdExperencia.Direction = ParameterDirection.Output;
                 SqlCmd.Parameters.Add(ParIdExperencia);
@@ -78,7 +78,7 @@ namespace CapaDatos
 
                 //Recibe tercer campo
                 SqlParameter ParPuesto = new SqlParameter();
-                ParPuesto.ParameterName = "@puesto_ocupado";
+                ParPuesto.ParameterName = "@puesto";
                 ParPuesto.SqlDbType = SqlDbType.VarChar;
                 ParPuesto.Size = (50);
                 ParPuesto.Value = Experencia.Puesto_ocupado;
@@ -134,12 +134,12 @@ namespace CapaDatos
                 //Establecer el comando
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "speditar_experencia";
+                SqlCmd.CommandText = "speditar_experiencia";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 //Recibe primer campo
                 SqlParameter ParIdExperencia = new SqlParameter();
-                ParIdExperencia.ParameterName = "@id_capacitaciones";
+                ParIdExperencia.ParameterName = "@id_experiencia";
                 ParIdExperencia.SqlDbType = SqlDbType.Int;
                 ParIdExperencia.Value = Experencia.IdExperencia;
                 SqlCmd.Parameters.Add(ParIdExperencia);
@@ -154,7 +154,7 @@ namespace CapaDatos
 
                 //Recibe tercer campo
                 SqlParameter ParPuesto = new SqlParameter();
-                ParPuesto.ParameterName = "@puesto_ocupado";
+                ParPuesto.ParameterName = "@puesto";
                 ParPuesto.SqlDbType = SqlDbType.VarChar;
                 ParPuesto.Size = (50);
                 ParPuesto.Value = Experencia.Puesto_ocupado;
@@ -210,12 +210,12 @@ namespace CapaDatos
                 //Establecer el comando
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "speliminar_experencia";
+                SqlCmd.CommandText = "speliminar_experiencia";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 //Recibe primer campo
                 SqlParameter ParIdExperencia = new SqlParameter();
-                ParIdExperencia.ParameterName = "@id_capacitaciones";
+                ParIdExperencia.ParameterName = "@id_experiencia";
                 ParIdExperencia.SqlDbType = SqlDbType.Int;
                 ParIdExperencia.Value = Experencia.IdExperencia;
                 SqlCmd.Parameters.Add(ParIdExperencia);
@@ -237,14 +237,14 @@ namespace CapaDatos
         //Metodo Mostrar tabla
         public DataTable Mostrar()
         {
-            DataTable DtResultado = new DataTable("experencia");
+            DataTable DtResultado = new DataTable("experiencia");
             SqlConnection SqlCon = new SqlConnection();
             try
             {
                 SqlCon.ConnectionString = Conexion.Cn;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "spmostrar_experencia";
+                SqlCmd.CommandText = "spmostrar_experiencia";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
@@ -260,14 +260,14 @@ namespace CapaDatos
         //Metodo Buscar nombre
         public DataTable BuscarNombre(DExperencia Experencia)
         {
-            DataTable DtResultado = new DataTable("experencia");
+            DataTable DtResultado = new DataTable("experiencia");
             SqlConnection SqlCon = new SqlConnection();
             try
             {
                 SqlCon.ConnectionString = Conexion.Cn;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "spbuscar_experencia";
+                SqlCmd.CommandText = "spbuscar_experiencia";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter ParTextoBuscar = new SqlParameter();
