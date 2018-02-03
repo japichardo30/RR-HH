@@ -43,6 +43,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="NCapacitaciones.cs" />
     <Compile Include="NCompetencias.cs" />
+    <Compile Include="NDepartamentos.cs" />
     <Compile Include="NExperencia.cs" />
     <Compile Include="NIdiomas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

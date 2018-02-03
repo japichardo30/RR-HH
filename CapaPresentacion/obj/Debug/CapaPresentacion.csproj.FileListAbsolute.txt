@@ -30,3 +30,4 @@ C:\Users\japichardo\Documents\GitHub\RR-HH\CapaPresentacion\obj\Debug\CapaPresen
 C:\Users\japichardo\Documents\GitHub\RR-HH\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 C:\Users\japichardo\Documents\GitHub\RR-HH\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmExperencia.resources
+C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmDepartamentos.resources

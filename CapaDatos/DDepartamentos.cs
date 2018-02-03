@@ -62,7 +62,7 @@ namespace CapaDatos
 
                 //Segundo parametro a recibir(Nombre)
                 SqlParameter ParNombre = new SqlParameter();
-                ParNombre.ParameterName = "@Descripcion";
+                ParNombre.ParameterName = "@nombre";
                 ParNombre.SqlDbType = SqlDbType.VarChar;
                 ParNombre.Size = 50;
                 ParNombre.Value = Departamentos.Nombre;
@@ -70,7 +70,7 @@ namespace CapaDatos
 
                 //Tercer parametro a recibir(Estado)
                 SqlParameter ParEstado = new SqlParameter();
-                ParEstado.ParameterName = "@Estado";
+                ParEstado.ParameterName = "@estado";
                 ParEstado.SqlDbType = SqlDbType.Bit;
                 ParEstado.Value = Departamentos.Estado;
                 SqlCmd.Parameters.Add(ParEstado);
@@ -118,7 +118,7 @@ namespace CapaDatos
 
                 //Segundo parametro a recibir(Nombre)
                 SqlParameter ParNombre = new SqlParameter();
-                ParNombre.ParameterName = "@Descripcion";
+                ParNombre.ParameterName = "@nombre";
                 ParNombre.SqlDbType = SqlDbType.VarChar;
                 ParNombre.Size = 256;
                 ParNombre.Value = Departamentos.Nombre;
