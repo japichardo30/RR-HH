@@ -46,6 +46,7 @@
     <Compile Include="NDepartamentos.cs" />
     <Compile Include="NExperencia.cs" />
     <Compile Include="NIdiomas.cs" />
+    <Compile Include="NPuestos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
