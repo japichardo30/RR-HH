@@ -32,8 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPuestos));
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.erroricono = new System.Windows.Forms.ErrorProvider(this.components);
-            this.txtNivel = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkEstado = new System.Windows.Forms.CheckBox();
+            this.txtSalarioMax = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtSalarioMin = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -60,8 +61,7 @@
             this.btnImprimir = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtSalarioMax = new System.Windows.Forms.TextBox();
-            this.chkEstado = new System.Windows.Forms.CheckBox();
+            this.cmbNivel = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.erroricono)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -78,20 +78,11 @@
             // 
             this.erroricono.ContainerControl = this;
             // 
-            // txtNivel
-            // 
-            this.txtNivel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.txtNivel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNivel.Location = new System.Drawing.Point(128, 176);
-            this.txtNivel.Name = "txtNivel";
-            this.txtNivel.Size = new System.Drawing.Size(178, 20);
-            this.txtNivel.TabIndex = 17;
-            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmbNivel);
             this.groupBox1.Controls.Add(this.chkEstado);
             this.groupBox1.Controls.Add(this.txtSalarioMax);
-            this.groupBox1.Controls.Add(this.txtNivel);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtSalarioMin);
             this.groupBox1.Controls.Add(this.label7);
@@ -111,6 +102,26 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Puestos";
+            // 
+            // chkEstado
+            // 
+            this.chkEstado.AutoSize = true;
+            this.chkEstado.Location = new System.Drawing.Point(465, 178);
+            this.chkEstado.Name = "chkEstado";
+            this.chkEstado.Size = new System.Drawing.Size(51, 17);
+            this.chkEstado.TabIndex = 19;
+            this.chkEstado.Text = "False";
+            this.chkEstado.UseVisualStyleBackColor = true;
+            this.chkEstado.CheckedChanged += new System.EventHandler(this.chkEstado_CheckedChanged);
+            // 
+            // txtSalarioMax
+            // 
+            this.txtSalarioMax.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtSalarioMax.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSalarioMax.Location = new System.Drawing.Point(465, 103);
+            this.txtSalarioMax.Name = "txtSalarioMax";
+            this.txtSalarioMax.Size = new System.Drawing.Size(200, 20);
+            this.txtSalarioMax.TabIndex = 18;
             // 
             // label8
             // 
@@ -158,6 +169,7 @@
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "&Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnEditar
             // 
@@ -169,6 +181,7 @@
             this.btnEditar.TabIndex = 8;
             this.btnEditar.Text = "&Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnGuardar
             // 
@@ -180,6 +193,7 @@
             this.btnGuardar.TabIndex = 7;
             this.btnGuardar.Text = "&Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnNuevo
             // 
@@ -191,6 +205,7 @@
             this.btnNuevo.TabIndex = 6;
             this.btnNuevo.Text = "&Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // txtNombre
             // 
@@ -260,6 +275,7 @@
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "&Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtBuscar
             // 
@@ -267,6 +283,7 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(176, 20);
             this.txtBuscar.TabIndex = 1;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // label2
             // 
@@ -281,7 +298,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(16, 70);
+            this.tabControl1.Location = new System.Drawing.Point(16, 71);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(730, 356);
@@ -320,6 +337,8 @@
             this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataListado.Size = new System.Drawing.Size(659, 150);
             this.dataListado.TabIndex = 7;
+            this.dataListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListado_CellContentClick);
+            this.dataListado.DoubleClick += new System.EventHandler(this.dataListado_DoubleClick);
             // 
             // Eliminar
             // 
@@ -345,6 +364,7 @@
             this.chkEliminar.TabIndex = 5;
             this.chkEliminar.Text = "Eliminar";
             this.chkEliminar.UseVisualStyleBackColor = true;
+            this.chkEliminar.CheckedChanged += new System.EventHandler(this.chkEliminar_CheckedChanged);
             // 
             // btnImprimir
             // 
@@ -367,6 +387,7 @@
             this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "&Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label1
             // 
@@ -380,24 +401,13 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Puestos";
             // 
-            // txtSalarioMax
+            // cmbNivel
             // 
-            this.txtSalarioMax.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.txtSalarioMax.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSalarioMax.Location = new System.Drawing.Point(465, 103);
-            this.txtSalarioMax.Name = "txtSalarioMax";
-            this.txtSalarioMax.Size = new System.Drawing.Size(200, 20);
-            this.txtSalarioMax.TabIndex = 18;
-            // 
-            // chkEstado
-            // 
-            this.chkEstado.AutoSize = true;
-            this.chkEstado.Location = new System.Drawing.Point(465, 178);
-            this.chkEstado.Name = "chkEstado";
-            this.chkEstado.Size = new System.Drawing.Size(51, 17);
-            this.chkEstado.TabIndex = 19;
-            this.chkEstado.Text = "False";
-            this.chkEstado.UseVisualStyleBackColor = true;
+            this.cmbNivel.FormattingEnabled = true;
+            this.cmbNivel.Location = new System.Drawing.Point(128, 169);
+            this.cmbNivel.Name = "cmbNivel";
+            this.cmbNivel.Size = new System.Drawing.Size(178, 21);
+            this.cmbNivel.TabIndex = 20;
             // 
             // FrmPuestos
             // 
@@ -442,7 +452,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckBox chkEstado;
         private System.Windows.Forms.TextBox txtSalarioMax;
-        private System.Windows.Forms.TextBox txtNivel;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtSalarioMin;
         private System.Windows.Forms.Label label7;
@@ -457,5 +466,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmbNivel;
     }
 }
