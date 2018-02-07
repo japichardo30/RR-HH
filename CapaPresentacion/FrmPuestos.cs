@@ -25,7 +25,7 @@ namespace CapaPresentacion
             
             //Contenido del ComboBox
             cmbNivel.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbNivel.Text = "Seleccione una opcion";
+            cmbNivel.Items.Add ("Seleccione una opcion");
             cmbNivel.Items.Add("Alto");
             cmbNivel.Items.Add("Medio");
             cmbNivel.Items.Add("Bajo");
@@ -51,7 +51,7 @@ namespace CapaPresentacion
             this.txtSalarioMin.Text = string.Empty;
             this.txtSalarioMax.Text = string.Empty;
             this.txtIdPuestos.Text = string.Empty;
-            cmbNivel.Items.Clear();
+            
         }
 
         //Habilitar los controles del formulario
@@ -61,7 +61,7 @@ namespace CapaPresentacion
             this.txtSalarioMin.ReadOnly = !valor;
             this.txtSalarioMax.ReadOnly = !valor;
             this.txtIdPuestos.ReadOnly = !valor;
-            this.cmbNivel.Enabled = false;
+            this.cmbNivel.Enabled = true;
         }
 
         //Habilitar los botones
@@ -287,7 +287,7 @@ namespace CapaPresentacion
 
         private void dataListado_DoubleClick(object sender, EventArgs e)
         {
-            this.txtIdPuestos.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["id_puesto"].Value);
+            this.txtIdPuestos.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["id_puestos"].Value);
             this.txtNombre.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["Nombre"].Value);
             this.txtSalarioMin.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["Salario_min"].Value);
             this.txtSalarioMax.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["Salario_max"].Value);
