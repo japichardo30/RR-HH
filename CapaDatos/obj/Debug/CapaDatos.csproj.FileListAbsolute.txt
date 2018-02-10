@@ -1,12 +1,11 @@
-C:\Users\USER\source\repos\RRHH\CapaDatos\bin\Debug\CapaDatos.dll
-C:\Users\USER\source\repos\RRHH\CapaDatos\bin\Debug\CapaDatos.pdb
-C:\Users\USER\source\repos\RRHH\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
-C:\Users\USER\source\repos\RRHH\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
-C:\Users\USER\source\repos\RRHH\CapaDatos\obj\Debug\CapaDatos.dll
-C:\Users\USER\source\repos\RRHH\CapaDatos\obj\Debug\CapaDatos.pdb
 C:\Users\japichardo\Documents\GitHub\RR-HH\CapaDatos\bin\Debug\CapaDatos.dll
 C:\Users\japichardo\Documents\GitHub\RR-HH\CapaDatos\bin\Debug\CapaDatos.pdb
 C:\Users\japichardo\Documents\GitHub\RR-HH\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
 C:\Users\japichardo\Documents\GitHub\RR-HH\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
 C:\Users\japichardo\Documents\GitHub\RR-HH\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\japichardo\Documents\GitHub\RR-HH\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\USER\source\repos\RRHH\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\USER\source\repos\RRHH\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\USER\source\repos\RRHH\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\RRHH\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\USER\source\repos\RRHH\CapaDatos\obj\Debug\CapaDatos.pdb

@@ -8,10 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaNegocio;
+using MetroFramework;
 
 namespace CapaPresentacion
 {
-    public partial class FrmCompetencias : Form
+    public partial class FrmCompetencias : MetroFramework.Forms.MetroForm
     {
         private bool IsNuevo = false;
         private bool IsEditar = false;

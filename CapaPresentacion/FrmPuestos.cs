@@ -8,10 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaNegocio;
+using MetroFramework;
 
 namespace CapaPresentacion
 {
-    public partial class FrmPuestos : Form
+    public partial class FrmPuestos : MetroFramework.Forms.MetroForm
     {
         private bool IsNuevo = false;
         private bool IsEditar = false;
@@ -293,6 +294,11 @@ namespace CapaPresentacion
             this.txtSalarioMax.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["Salario_max"].Value);
 
             this.tabControl1.SelectedIndex = 1;
+        }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

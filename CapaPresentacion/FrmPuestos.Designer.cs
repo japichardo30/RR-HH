@@ -33,6 +33,7 @@
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.erroricono = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbNivel = new System.Windows.Forms.ComboBox();
             this.chkEstado = new System.Windows.Forms.CheckBox();
             this.txtSalarioMax = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -60,8 +61,6 @@
             this.chkEliminar = new System.Windows.Forms.CheckBox();
             this.btnImprimir = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbNivel = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.erroricono)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -102,6 +101,14 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Puestos";
+            // 
+            // cmbNivel
+            // 
+            this.cmbNivel.FormattingEnabled = true;
+            this.cmbNivel.Location = new System.Drawing.Point(128, 169);
+            this.cmbNivel.Name = "cmbNivel";
+            this.cmbNivel.Size = new System.Drawing.Size(178, 21);
+            this.cmbNivel.TabIndex = 20;
             // 
             // chkEstado
             // 
@@ -376,6 +383,7 @@
             this.btnImprimir.TabIndex = 4;
             this.btnImprimir.Text = "&Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // btnEliminar
             // 
@@ -389,36 +397,18 @@
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(11, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 29);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Puestos";
-            // 
-            // cmbNivel
-            // 
-            this.cmbNivel.FormattingEnabled = true;
-            this.cmbNivel.Location = new System.Drawing.Point(128, 169);
-            this.cmbNivel.Name = "cmbNivel";
-            this.cmbNivel.Size = new System.Drawing.Size(178, 21);
-            this.cmbNivel.TabIndex = 20;
-            // 
             // FrmPuestos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(756, 449);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.label1);
+            this.Location = new System.Drawing.Point(0, 0);
+            this.MaximizeBox = false;
             this.Name = "FrmPuestos";
-            this.Text = ".:.Mantenimiento Puestos.:.";
+            this.Resizable = false;
+            this.Style = MetroFramework.MetroColorStyle.Silver;
+            this.Text = "Puestos";
             this.Load += new System.EventHandler(this.FrmPuestos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.erroricono)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -429,7 +419,6 @@
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -465,7 +454,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbNivel;
     }
 }

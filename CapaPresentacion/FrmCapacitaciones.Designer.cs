@@ -51,17 +51,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtpFechaFin = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaInicio = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtInstitucion = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cmbNivel = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
             this.erroricono = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.cmbNivel = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtInstitucion = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dtpFechaInicio = new System.Windows.Forms.DateTimePicker();
-            this.dtpFechaFin = new System.Windows.Forms.DateTimePicker();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -309,6 +308,65 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Capacitaciones";
             // 
+            // dtpFechaFin
+            // 
+            this.dtpFechaFin.Location = new System.Drawing.Point(486, 97);
+            this.dtpFechaFin.Name = "dtpFechaFin";
+            this.dtpFechaFin.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaFin.TabIndex = 16;
+            // 
+            // dtpFechaInicio
+            // 
+            this.dtpFechaInicio.Location = new System.Drawing.Point(486, 21);
+            this.dtpFechaInicio.Name = "dtpFechaInicio";
+            this.dtpFechaInicio.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaInicio.TabIndex = 15;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(408, 178);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Institucion";
+            // 
+            // txtInstitucion
+            // 
+            this.txtInstitucion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtInstitucion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtInstitucion.Location = new System.Drawing.Point(486, 176);
+            this.txtInstitucion.Name = "txtInstitucion";
+            this.txtInstitucion.Size = new System.Drawing.Size(200, 20);
+            this.txtInstitucion.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(408, 101);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Fecha fin";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(408, 28);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Fecha inicio: ";
+            // 
+            // cmbNivel
+            // 
+            this.cmbNivel.FormattingEnabled = true;
+            this.cmbNivel.Location = new System.Drawing.Point(128, 176);
+            this.cmbNivel.Name = "cmbNivel";
+            this.cmbNivel.Size = new System.Drawing.Size(178, 21);
+            this.cmbNivel.TabIndex = 10;
+            this.cmbNivel.SelectedIndexChanged += new System.EventHandler(this.cmbNivel_SelectedIndexChanged);
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.groupBox1);
@@ -319,18 +377,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 29);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Capacitaciones";
             // 
             // erroricono
             // 
@@ -346,75 +392,18 @@
             this.tabControl1.Size = new System.Drawing.Size(730, 356);
             this.tabControl1.TabIndex = 3;
             // 
-            // cmbNivel
-            // 
-            this.cmbNivel.FormattingEnabled = true;
-            this.cmbNivel.Location = new System.Drawing.Point(128, 176);
-            this.cmbNivel.Name = "cmbNivel";
-            this.cmbNivel.Size = new System.Drawing.Size(178, 21);
-            this.cmbNivel.TabIndex = 10;
-            this.cmbNivel.SelectedIndexChanged += new System.EventHandler(this.cmbNivel_SelectedIndexChanged);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(408, 28);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 13);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Fecha inicio: ";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(408, 101);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 13);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Fecha fin";
-            // 
-            // txtInstitucion
-            // 
-            this.txtInstitucion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.txtInstitucion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtInstitucion.Location = new System.Drawing.Point(486, 176);
-            this.txtInstitucion.Name = "txtInstitucion";
-            this.txtInstitucion.Size = new System.Drawing.Size(200, 20);
-            this.txtInstitucion.TabIndex = 13;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(408, 178);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 13);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Institucion";
-            // 
-            // dtpFechaInicio
-            // 
-            this.dtpFechaInicio.Location = new System.Drawing.Point(486, 21);
-            this.dtpFechaInicio.Name = "dtpFechaInicio";
-            this.dtpFechaInicio.Size = new System.Drawing.Size(200, 20);
-            this.dtpFechaInicio.TabIndex = 15;
-            // 
-            // dtpFechaFin
-            // 
-            this.dtpFechaFin.Location = new System.Drawing.Point(486, 97);
-            this.dtpFechaFin.Name = "dtpFechaFin";
-            this.dtpFechaFin.Size = new System.Drawing.Size(200, 20);
-            this.dtpFechaFin.TabIndex = 16;
-            // 
             // FrmCapacitaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(756, 449);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
+            this.Location = new System.Drawing.Point(0, 0);
+            this.MaximizeBox = false;
             this.Name = "FrmCapacitaciones";
-            this.Text = ".:.Mantenimiento Capacitaciones.:.";
+            this.Resizable = false;
+            this.Style = MetroFramework.MetroColorStyle.Silver;
+            this.Text = "Capacitaciones";
             this.Load += new System.EventHandler(this.FrmCapacitaciones_Load);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -425,7 +414,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.erroricono)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -460,7 +448,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cmbNivel;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ErrorProvider erroricono;
         private System.Windows.Forms.TabControl tabControl1;
     }
