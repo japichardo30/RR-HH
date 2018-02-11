@@ -17,7 +17,7 @@ namespace RRHH
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPuestos());
+            Application.Run(new FrmCandidatos());
         }
     }
 }

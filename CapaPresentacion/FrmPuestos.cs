@@ -52,6 +52,7 @@ namespace CapaPresentacion
             this.txtSalarioMin.Text = string.Empty;
             this.txtSalarioMax.Text = string.Empty;
             this.txtIdPuestos.Text = string.Empty;
+            cmbNivel.SelectedText = "";
             
         }
 

@@ -33,3 +33,4 @@ C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.cspr
 C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\USER\source\repos\RRHH\CapaPresentacion\bin\Debug\MetroFramework.dll
+C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmCandidatos.resources
