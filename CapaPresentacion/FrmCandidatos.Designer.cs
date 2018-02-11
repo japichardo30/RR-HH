@@ -45,6 +45,10 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnBuscarExperiencia = new System.Windows.Forms.Button();
+            this.txtIdExperiencia = new System.Windows.Forms.TextBox();
+            this.txtExperiencia = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btnBuscarCapacitaciones = new System.Windows.Forms.Button();
             this.txtIdCapacitaciones = new System.Windows.Forms.TextBox();
@@ -78,10 +82,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnBuscarExperiencia = new System.Windows.Forms.Button();
-            this.txtIdExperiencia = new System.Windows.Forms.TextBox();
-            this.txtExperiencia = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
@@ -281,6 +281,43 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Candidatos";
             // 
+            // btnBuscarExperiencia
+            // 
+            this.btnBuscarExperiencia.BackgroundImage = global::CapaPresentacion.Properties.Resources.search;
+            this.btnBuscarExperiencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBuscarExperiencia.Location = new System.Drawing.Point(313, 390);
+            this.btnBuscarExperiencia.Name = "btnBuscarExperiencia";
+            this.btnBuscarExperiencia.Size = new System.Drawing.Size(43, 31);
+            this.btnBuscarExperiencia.TabIndex = 43;
+            this.btnBuscarExperiencia.UseVisualStyleBackColor = true;
+            // 
+            // txtIdExperiencia
+            // 
+            this.txtIdExperiencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtIdExperiencia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIdExperiencia.Location = new System.Drawing.Point(128, 366);
+            this.txtIdExperiencia.Name = "txtIdExperiencia";
+            this.txtIdExperiencia.Size = new System.Drawing.Size(39, 20);
+            this.txtIdExperiencia.TabIndex = 42;
+            // 
+            // txtExperiencia
+            // 
+            this.txtExperiencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtExperiencia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtExperiencia.Location = new System.Drawing.Point(128, 394);
+            this.txtExperiencia.Name = "txtExperiencia";
+            this.txtExperiencia.Size = new System.Drawing.Size(178, 20);
+            this.txtExperiencia.TabIndex = 41;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(21, 391);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(63, 13);
+            this.label12.TabIndex = 40;
+            this.label12.Text = "Experencia:";
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -336,6 +373,7 @@
             this.btnBuscarCompetencias.Size = new System.Drawing.Size(43, 31);
             this.btnBuscarCompetencias.TabIndex = 34;
             this.btnBuscarCompetencias.UseVisualStyleBackColor = true;
+            this.btnBuscarCompetencias.Click += new System.EventHandler(this.btnBuscarCompetencias_Click);
             // 
             // txtIdCompetencias
             // 
@@ -373,6 +411,7 @@
             this.btnBuscarIdioma.Size = new System.Drawing.Size(43, 31);
             this.btnBuscarIdioma.TabIndex = 30;
             this.btnBuscarIdioma.UseVisualStyleBackColor = true;
+            this.btnBuscarIdioma.Click += new System.EventHandler(this.btnBuscarIdioma_Click);
             // 
             // txtIdIdioma
             // 
@@ -598,43 +637,6 @@
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 0;
             this.label3.Text = "Codigo: ";
-            // 
-            // btnBuscarExperiencia
-            // 
-            this.btnBuscarExperiencia.BackgroundImage = global::CapaPresentacion.Properties.Resources.search;
-            this.btnBuscarExperiencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBuscarExperiencia.Location = new System.Drawing.Point(313, 390);
-            this.btnBuscarExperiencia.Name = "btnBuscarExperiencia";
-            this.btnBuscarExperiencia.Size = new System.Drawing.Size(43, 31);
-            this.btnBuscarExperiencia.TabIndex = 43;
-            this.btnBuscarExperiencia.UseVisualStyleBackColor = true;
-            // 
-            // txtIdExperiencia
-            // 
-            this.txtIdExperiencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.txtIdExperiencia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtIdExperiencia.Location = new System.Drawing.Point(128, 366);
-            this.txtIdExperiencia.Name = "txtIdExperiencia";
-            this.txtIdExperiencia.Size = new System.Drawing.Size(39, 20);
-            this.txtIdExperiencia.TabIndex = 42;
-            // 
-            // txtExperiencia
-            // 
-            this.txtExperiencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.txtExperiencia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtExperiencia.Location = new System.Drawing.Point(128, 394);
-            this.txtExperiencia.Name = "txtExperiencia";
-            this.txtExperiencia.Size = new System.Drawing.Size(178, 20);
-            this.txtExperiencia.TabIndex = 41;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(21, 391);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(63, 13);
-            this.label12.TabIndex = 40;
-            this.label12.Text = "Experencia:";
             // 
             // FrmCandidatos
             // 

@@ -17,6 +17,29 @@ namespace CapaPresentacion
         private bool IsNuevo = false;
         private bool IsEditar = false;
 
+        private static FrmCandidatos _Instancia;
+        
+        public static FrmCandidatos GetInstancia()
+        {
+            if(_Instancia == null)
+            {
+                _Instancia = new FrmCandidatos();
+            }
+            return _Instancia;
+        }
+
+        public void setIdiomas(string ididioma, string nombre)
+        {
+            this.txtIdIdioma.Text = ididioma;
+            this.txtIdioma.Text = nombre;
+        }
+
+        public void setCompetencias(string idcompetencias, string descripcion)
+        {
+            this.txtIdCompetencias.Text = idcompetencias;
+            this.txtCompetencias.Text = descripcion;
+        }
+
         public FrmCandidatos()
         {
             InitializeComponent();
@@ -380,6 +403,18 @@ namespace CapaPresentacion
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
+        }
+
+        private void btnBuscarIdioma_Click(object sender, EventArgs e)
+        {
+            FrmListadoIdiomas form = new FrmListadoIdiomas();
+            form.ShowDialog();
+        }
+
+        private void btnBuscarCompetencias_Click(object sender, EventArgs e)
+        {
+            FrmListadoCompetencias form = new FrmListadoCompetencias();
+            form.ShowDialog();
         }
     }
 }

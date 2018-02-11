@@ -121,26 +121,6 @@
     <value>True</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnImprimir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAXRJREFUOE+tzLtLAgEcB/D7R8paagoaavUPuErthrZK6QFlLr2ncGiphkAqLLke
-        DikRpKAhnefbLs+iFPNFW2EGDlFDZI9vpx3c0GUFfeEDv+H7+xL/HtqT8B+E8zE56+6EX6x9n9P8HZ7K
-        b7L4XBFi7fucZIt4eHqVdZy5/Xkgkr5F6fFFVij1i4GAUCrcl2X5kgX5AY12glI0tZjq6xtgse7hIl+Q
-        Zd62oa5Ogcbm1mWqf1wjvhPE2rYDA/oZqNUU+rRD0A2OyOrVDkOl6oZO6M4t0e/iuzTQ0dH1I5Ls/Drg
-        YjiE45d/Yt5xSgNB7hyxi1xNG1Yr1u0WmG0bOHAx2LK7pQHuLIXM1XVNHtYLH+cHKwhFedgdjDRwlszi
-        pljCeSqH2bn5mhLpfLXr9ASlgc3dw1c3G8WCyYJANF7lE7ARHt4wD0ZwFIoJeCyu0Kh0V+n9Z/FdSruS
-        7DFMG2GYMmJMpK+Y/DQq3G1KkhLr/xGC+ABy5+ZUR1cf2wAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnEliminar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAHBJREFUOE9jwAJKgHgNDlwIxAQBSCEusAJKowCY6ZeA+AkQfyOAQWouAjFMHxzg
-        sxkd4HQJDOhBaUkgFocwGfShNAgQNACmIAKIQyBMrPIoYNSAYWdAMpQ2AWJDCJMhFUqDAEEDCAGcBhCL
-        oQYwMAAAZKI9w/T2KHQAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="btnBuscar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -213,9 +193,9 @@
 </value>
   </data>
   <metadata name="erroricono.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
+    <value>443, 17</value>
   </metadata>
   <metadata name="ttMensaje.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>125, 56</value>
+    <value>551, 17</value>
   </metadata>
 </root>
