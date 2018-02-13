@@ -10,3 +10,6 @@ C:\Users\USER\source\repos\RRHH\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompile
 C:\Users\USER\source\repos\RRHH\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\USER\source\repos\RRHH\CapaDatos\obj\Debug\CapaDatos.pdb
 C:\Users\USER\source\repos\RRHH\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\USER\source\repos\RRHH\CapaDatos\bin\Debug\MetroFramework.Design.dll
+C:\Users\USER\source\repos\RRHH\CapaDatos\bin\Debug\MetroFramework.dll
+C:\Users\USER\source\repos\RRHH\CapaDatos\bin\Debug\MetroFramework.Fonts.dll

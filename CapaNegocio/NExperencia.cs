@@ -17,7 +17,7 @@ namespace CapaNegocio
             Obj.Puesto_ocupado = puesto_ocupado;
             Obj.Fecha_ini = fecha_ini;
             Obj.Fecha_fin = fecha_fin;
-            Obj.Empresa = empresa;
+            Obj.Salario = salario;
             return Obj.Insertar(Obj);
         }
 

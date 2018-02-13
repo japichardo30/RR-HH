@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaPresentacion;
 
+
 namespace RRHH
 {
     static class Program
@@ -17,7 +18,8 @@ namespace RRHH
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(FrmCandidatos.GetInstancia());
+            Application.Run(new FrmPrincipal());
+            //FrmCandidatos.GetInstancia()
         }
     }
 }

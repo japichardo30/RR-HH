@@ -100,11 +100,23 @@
     <Compile Include="FrmListadoCompetencias.Designer.cs">
       <DependentUpon>FrmListadoCompetencias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmListadoExperiencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListadoExperiencia.Designer.cs">
+      <DependentUpon>FrmListadoExperiencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmListadoIdiomas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmListadoIdiomas.Designer.cs">
       <DependentUpon>FrmListadoIdiomas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPuestos.cs">
       <SubType>Form</SubType>
@@ -150,8 +162,14 @@
     <EmbeddedResource Include="FrmListadoCompetencias.resx">
       <DependentUpon>FrmListadoCompetencias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmListadoExperiencia.resx">
+      <DependentUpon>FrmListadoExperiencia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoIdiomas.resx">
       <DependentUpon>FrmListadoIdiomas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPuestos.resx">
       <DependentUpon>FrmPuestos.cs</DependentUpon>
@@ -176,6 +194,63 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_save_173091.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_basics-22_296812.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_98_111048.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_applications-office_118837.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_user_close_add_103747.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_user-group_285648.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_user_285655.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_General_Office_37_2530816.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_business_2799208.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_calendar_1608599.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_user_close_add_1037471.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_language_1608752.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_skills_44678.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Arrows_3_2638360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_app_type_blogger_512px_GREY_339937.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_22_171495.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Department_22141.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -36,3 +36,8 @@ C:\Users\USER\source\repos\RRHH\CapaPresentacion\bin\Debug\MetroFramework.dll
 C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmCandidatos.resources
 C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmListadoIdiomas.resources
 C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmListadoCompetencias.resources
+C:\Users\USER\source\repos\RRHH\CapaPresentacion\bin\Debug\MetroFramework.Design.dll
+C:\Users\USER\source\repos\RRHH\CapaPresentacion\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmListadoCapacitaciones.resources
+C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmListadoExperiencia.resources
+C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmPrincipal.resources

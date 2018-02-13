@@ -143,6 +143,7 @@ namespace CapaPresentacion
                 {
                     if (this.IsNuevo)
                     {
+                     
                         rpta = NExperencia.Insertar(this.txtEmpresa.Text.Trim().ToUpper(), this.txtPuesto.Text.Trim().ToUpper(), this.dtpFechaInicio.Value.Date, this.dtpFechaFin.Value.Date, Convert.ToDecimal(this.txtSalario.Text));
                     }
                     else

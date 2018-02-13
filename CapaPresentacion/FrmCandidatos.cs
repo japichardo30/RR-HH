@@ -40,6 +40,18 @@ namespace CapaPresentacion
             this.txtCompetencias.Text = descripcion;
         }
 
+        public void setCapacitaciones(string idcapacitaciones, string descripcion)
+        {
+            this.txtIdCapacitaciones.Text = idcapacitaciones;
+            this.txtCapacitaciones.Text = descripcion;
+        }
+
+        public void setExperiencia(string idExperiencia, string puesto)
+        {
+            this.txtIdExperiencia.Text = idExperiencia;
+            this.txtExperiencia.Text = puesto;
+        }
+
         public FrmCandidatos()
         {
             InitializeComponent();
@@ -60,7 +72,7 @@ namespace CapaPresentacion
             this.txtIdIdioma.Visible = false;
             this.txtIdCompetencias.Visible = false;
             this.txtIdCapacitaciones.Visible = false;
-            this.txtIdExperiencia.Visible = false;
+            //this.txtIdExperiencia.Visible = false;
 
             this.txtIdioma.ReadOnly = true;
             this.txtCapacitaciones.ReadOnly = true;
@@ -232,7 +244,7 @@ namespace CapaPresentacion
             try
             {
                 string rpta = "";
-                if (this.txtCedula.Text == string.Empty || this.txtNombre.Text == string.Empty || this.txtApellido.Text == string.Empty || this.txtSalario.Text == string.Empty || this.txtIdioma.Text == string.Empty || this.txtCompetencias.Text == string.Empty || this.txtIdCapacitaciones.Text == string.Empty || this.txtIdExperiencia.Text == string.Empty)
+                if (this.txtCedula.Text == string.Empty)
                 {
                     MensajeError("Faltan ingresar algunos datos, seran remarcados");
                     erroricono.SetError(txtCedula, "Ingrese un valor");
@@ -251,8 +263,8 @@ namespace CapaPresentacion
                         rpta = NCandidatos.Insertar(this.txtCedula.Text.Trim(), this.txtNombre.Text.Trim().ToUpper(), 
                             this.txtApellido.Text.Trim().ToUpper(), Convert.ToDecimal(this.txtSalario.Text), image, 
                             this.txtRecomendado.Text.Trim().ToUpper(), Convert.ToInt32(this.txtIdIdioma.Text), 
-                            Convert.ToInt32(this.txtCompetencias.Text), Convert.ToInt32(this.txtExperiencia.Text), 
-                            Convert.ToInt32(this.cmbPuestos.SelectedValue), Convert.ToInt32(this.txtCapacitaciones.Text));
+                            Convert.ToInt32(this.txtIdCompetencias.Text), Convert.ToInt32(this.txtIdExperiencia.Text), 
+                            Convert.ToInt32(this.cmbPuestos.SelectedValue), Convert.ToInt32(this.txtIdCapacitaciones.Text));
                     }
                     else
                     {
@@ -341,7 +353,7 @@ namespace CapaPresentacion
             this.pbImagen.Image = Image.FromStream(ms);
             this.pbImagen.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            this.txtIdExperiencia.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["id_experencia"].Value);
+            this.txtIdExperiencia.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["id_experiencia"].Value);
             this.txtExperiencia.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["Experiencia"].Value);
             this.txtIdIdioma.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["id_idiomas"].Value);
             this.txtIdioma.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["Idiomas"].Value);
@@ -414,6 +426,23 @@ namespace CapaPresentacion
         private void btnBuscarCompetencias_Click(object sender, EventArgs e)
         {
             FrmListadoCompetencias form = new FrmListadoCompetencias();
+            form.ShowDialog();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscarCapacitaciones_Click(object sender, EventArgs e)
+        {
+            FrmListadoCapacitaciones form = new FrmListadoCapacitaciones();
+            form.ShowDialog();
+        }
+
+        private void btnBuscarExperiencia_Click(object sender, EventArgs e)
+        {
+            FrmListadoExperiencia form = new FrmListadoExperiencia();
             form.ShowDialog();
         }
     }

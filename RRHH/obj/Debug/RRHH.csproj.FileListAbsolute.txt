@@ -29,3 +29,5 @@ C:\Users\USER\source\repos\RRHH\RRHH\obj\Debug\RRHH.csproj.GenerateResource.Cach
 C:\Users\USER\source\repos\RRHH\RRHH\obj\Debug\RRHH.csproj.CoreCompileInputs.cache
 C:\Users\USER\source\repos\RRHH\RRHH\obj\Debug\RRHH.exe
 C:\Users\USER\source\repos\RRHH\RRHH\obj\Debug\RRHH.pdb
+C:\Users\USER\source\repos\RRHH\RRHH\bin\Debug\MetroFramework.Design.dll
+C:\Users\USER\source\repos\RRHH\RRHH\bin\Debug\MetroFramework.Fonts.dll

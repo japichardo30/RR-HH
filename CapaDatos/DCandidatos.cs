@@ -135,7 +135,7 @@ namespace CapaDatos
                 //Recibe octavo campo
                 SqlParameter ParIdIdioma = new SqlParameter();
                 ParIdIdioma.ParameterName = "@ididiomas";
-                ParIdIdioma.SqlDbType = SqlDbType.VarChar;
+                ParIdIdioma.SqlDbType = SqlDbType.Int;
                 ParIdIdioma.Value = Candidatos.IdIdiomas;
                 SqlCmd.Parameters.Add(ParIdIdioma);
 
@@ -148,7 +148,7 @@ namespace CapaDatos
 
                 //Recibe decimo campo
                 SqlParameter ParIdExperiencia = new SqlParameter();
-                ParIdExperiencia.ParameterName = "@idexperencia";
+                ParIdExperiencia.ParameterName = "@idexperiencia";
                 ParIdExperiencia.SqlDbType = SqlDbType.VarChar;
                 ParIdExperiencia.Value = Candidatos.IdExperiencia;
                 SqlCmd.Parameters.Add(ParIdExperiencia);
@@ -164,7 +164,7 @@ namespace CapaDatos
                 SqlParameter ParIdCapacitaciones = new SqlParameter();
                 ParIdCapacitaciones.ParameterName = "@idcapacitaciones";
                 ParIdCapacitaciones.SqlDbType = SqlDbType.VarChar;
-                ParIdCapacitaciones.Value = Candidatos.IdPuestos;
+                ParIdCapacitaciones.Value = Candidatos.IdCapacitaciones;
                 SqlCmd.Parameters.Add(ParIdCapacitaciones);
 
                 //Ejecucion del comando
@@ -267,7 +267,7 @@ namespace CapaDatos
 
                 //Recibe decimo campo
                 SqlParameter ParIdExperiencia = new SqlParameter();
-                ParIdExperiencia.ParameterName = "@idexperencia";
+                ParIdExperiencia.ParameterName = "@idexperiencia";
                 ParIdExperiencia.SqlDbType = SqlDbType.VarChar;
                 ParIdExperiencia.Value = Candidatos.IdExperiencia;
                 SqlCmd.Parameters.Add(ParIdExperiencia);
