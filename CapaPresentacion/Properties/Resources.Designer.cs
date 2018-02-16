@@ -73,6 +73,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap candidate {
+            get {
+                object obj = ResourceManager.GetObject("candidate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap file {
             get {
                 object obj = ResourceManager.GetObject("file", resourceCulture);
@@ -206,6 +216,16 @@ namespace CapaPresentacion.Properties {
         internal static System.Drawing.Bitmap if_language_1608752 {
             get {
                 object obj = ResourceManager.GetObject("if_language_1608752", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_Login_Manager_7261 {
+            get {
+                object obj = ResourceManager.GetObject("if_Login Manager_7261", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

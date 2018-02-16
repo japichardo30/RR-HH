@@ -192,6 +192,8 @@ namespace CapaPresentacion
 
         private void FrmCandidatos_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dBRRHHDataSet.Experiencia' table. You can move, or remove it, as needed.
+            this.experienciaTableAdapter.Fill(this.dBRRHHDataSet.Experiencia);
             this.Top = 0;
             this.Left = 0;
 
@@ -237,6 +239,7 @@ namespace CapaPresentacion
             this.Limpiar();
             this.Habilitar(true);
             this.txtCedula.Focus();
+
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

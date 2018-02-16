@@ -31,3 +31,4 @@ C:\Users\USER\source\repos\RRHH\RRHH\obj\Debug\RRHH.exe
 C:\Users\USER\source\repos\RRHH\RRHH\obj\Debug\RRHH.pdb
 C:\Users\USER\source\repos\RRHH\RRHH\bin\Debug\MetroFramework.Design.dll
 C:\Users\USER\source\repos\RRHH\RRHH\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\USER\source\repos\RRHH\RRHH\bin\Debug\CapaPresentacion.dll.config

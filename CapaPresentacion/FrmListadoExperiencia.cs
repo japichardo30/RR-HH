@@ -44,9 +44,24 @@ namespace CapaPresentacion
             this.btnCancelar.Enabled = false;
         }
 
+        //Metodo para Ocultar columnas
+        private void OcultarColumnas()
+        {
+            this.dataListado.Columns[0].Visible = false;
+            this.dataListado.Columns[1].Visible = false;
+        }
+
+        //Metodo mostrar
+        private void Mostrar()
+        {
+            this.dataListado.DataSource = NExperencia.Mostrar();
+            this.OcultarColumnas();
+            lblTotal.Text = "Total de registro: " + Convert.ToString(dataListado.Rows.Count);
+        }
+
         private void FrmListadoExperiencia_Load(object sender, EventArgs e)
         {
-
+            this.Mostrar();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -65,7 +80,7 @@ namespace CapaPresentacion
                     rpta = NExperencia.Insertar(this.txtEmpresa.Text.Trim().ToUpper(), this.txtPuesto.Text.Trim().ToUpper(), this.dtpFechaInicio.Value.Date, this.dtpFechaFin.Value.Date, Convert.ToDecimal(this.txtSalario.Text));
                     FrmCandidatos form = FrmCandidatos.GetInstancia();
                     string par1, par2;
-                    par1 = Convert.ToString(this.txtIdExperencia.Text);
+                    par1 = Convert.ToString(idExperiencia);
                     par2 = Convert.ToString(this.txtPuesto.Text);
                     form.setExperiencia(par1, par2);
                     this.Hide();
@@ -88,6 +103,31 @@ namespace CapaPresentacion
             }
 
             Close();
+        }
+
+        private void chkEliminar_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

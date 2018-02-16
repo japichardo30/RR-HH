@@ -70,6 +70,7 @@
             this.departamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuConsultas = new System.Windows.Forms.ToolStripMenuItem();
             this.candidatosPorFechasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.candidatosPostuladosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
@@ -396,7 +397,8 @@
             // mnuConsultas
             // 
             this.mnuConsultas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.candidatosPorFechasToolStripMenuItem});
+            this.candidatosPorFechasToolStripMenuItem,
+            this.candidatosPostuladosToolStripMenuItem});
             this.mnuConsultas.Image = global::CapaPresentacion.Properties.Resources.search;
             this.mnuConsultas.Name = "mnuConsultas";
             this.mnuConsultas.Size = new System.Drawing.Size(87, 20);
@@ -406,8 +408,16 @@
             // 
             this.candidatosPorFechasToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.if_calendar_1608599;
             this.candidatosPorFechasToolStripMenuItem.Name = "candidatosPorFechasToolStripMenuItem";
-            this.candidatosPorFechasToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.candidatosPorFechasToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
             this.candidatosPorFechasToolStripMenuItem.Text = "Candidatos por fechas";
+            // 
+            // candidatosPostuladosToolStripMenuItem
+            // 
+            this.candidatosPostuladosToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.candidatosPostuladosToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.candidate;
+            this.candidatosPostuladosToolStripMenuItem.Name = "candidatosPostuladosToolStripMenuItem";
+            this.candidatosPostuladosToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.candidatosPostuladosToolStripMenuItem.Text = "Candidatos Postulados";
             // 
             // indexToolStripMenuItem
             // 
@@ -498,6 +508,7 @@
         private System.Windows.Forms.ToolStripButton tsMantenimientos;
         private System.Windows.Forms.ToolStripButton tsReclutamientos;
         private System.Windows.Forms.ToolStripMenuItem departamentosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem candidatosPostuladosToolStripMenuItem;
     }
 }
 

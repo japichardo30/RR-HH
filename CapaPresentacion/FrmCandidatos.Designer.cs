@@ -82,6 +82,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.erroricono = new System.Windows.Forms.ErrorProvider(this.components);
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
+            this.dBRRHHDataSet = new CapaPresentacion.DBRRHHDataSet();
+            this.experienciaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.experienciaTableAdapter = new CapaPresentacion.DBRRHHDataSetTableAdapters.ExperienciaTableAdapter();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
@@ -89,6 +92,8 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erroricono)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBRRHHDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.experienciaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBuscar
@@ -289,6 +294,7 @@
             // 
             this.txtIdExperiencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtIdExperiencia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIdExperiencia.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.experienciaBindingSource, "id_experiencia", true));
             this.txtIdExperiencia.Location = new System.Drawing.Point(128, 366);
             this.txtIdExperiencia.Name = "txtIdExperiencia";
             this.txtIdExperiencia.Size = new System.Drawing.Size(39, 20);
@@ -641,6 +647,20 @@
             // 
             this.ttMensaje.IsBalloon = true;
             // 
+            // dBRRHHDataSet
+            // 
+            this.dBRRHHDataSet.DataSetName = "DBRRHHDataSet";
+            this.dBRRHHDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // experienciaBindingSource
+            // 
+            this.experienciaBindingSource.DataMember = "Experiencia";
+            this.experienciaBindingSource.DataSource = this.dBRRHHDataSet;
+            // 
+            // experienciaTableAdapter
+            // 
+            this.experienciaTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmCandidatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -662,6 +682,8 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erroricono)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBRRHHDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.experienciaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -720,5 +742,8 @@
         private System.Windows.Forms.TextBox txtIdExperiencia;
         private System.Windows.Forms.TextBox txtExperiencia;
         private System.Windows.Forms.Label label12;
+        private DBRRHHDataSet dBRRHHDataSet;
+        private System.Windows.Forms.BindingSource experienciaBindingSource;
+        private DBRRHHDataSetTableAdapters.ExperienciaTableAdapter experienciaTableAdapter;
     }
 }

@@ -41,3 +41,5 @@ C:\Users\USER\source\repos\RRHH\CapaPresentacion\bin\Debug\MetroFramework.Fonts.
 C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmListadoCapacitaciones.resources
 C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmListadoExperiencia.resources
 C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmPrincipal.resources
+C:\Users\USER\source\repos\RRHH\CapaPresentacion\bin\Debug\CapaPresentacion.dll.config
+C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmLogin.resources
