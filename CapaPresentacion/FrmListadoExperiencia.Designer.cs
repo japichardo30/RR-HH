@@ -37,7 +37,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtSalario = new System.Windows.Forms.TextBox();
             this.txtIdExperencia = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnGuardar = new MetroFramework.Controls.MetroButton();
             this.dtpFechaFin = new System.Windows.Forms.DateTimePicker();
             this.dtpFechaInicio = new System.Windows.Forms.DateTimePicker();
@@ -88,7 +87,6 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtSalario);
             this.groupBox1.Controls.Add(this.txtIdExperencia);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.btnCancelar);
             this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Controls.Add(this.dtpFechaFin);
@@ -132,15 +130,6 @@
             this.txtIdExperencia.Name = "txtIdExperencia";
             this.txtIdExperencia.Size = new System.Drawing.Size(178, 20);
             this.txtIdExperencia.TabIndex = 20;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 33);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 13);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Codigo: ";
             // 
             // btnGuardar
             // 
@@ -362,7 +351,6 @@
         private System.Windows.Forms.TextBox txtEmpresa;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtIdExperencia;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSalario;
         private System.Windows.Forms.TabPage tabPage1;

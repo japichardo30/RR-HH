@@ -21,6 +21,7 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             this.ttMensaje.SetToolTip(this.txtNombre, "Ingrese el nombre del Idioma");
+            this.txtIdIdiomas.Visible = false;
         }
 
         //Mostrar mensaje de confirmacion

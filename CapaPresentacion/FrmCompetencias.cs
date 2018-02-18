@@ -22,6 +22,7 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             this.ttMensaje.SetToolTip(this.txtDescripcion, "Ingrese el nombre de la Competencia");
+            this.txtIdcompetencia.Visible = false;
         }
 
         //Mostrar mensaje de confirmacion

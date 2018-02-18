@@ -23,6 +23,7 @@ namespace CapaPresentacion
             this.ttMensaje.SetToolTip(this.txtEmpresa, "Ingrese el nombre de la empresa a la cual  pertenecia");
             this.ttMensaje.SetToolTip(this.txtSalario, "Ingrese el salario bruto que ganaba");
             this.ttMensaje.SetToolTip(this.txtPuesto, "Ingrese cual era su antgua posicion");
+            this.txtIdExperencia.Visible = false;
         }
 
         //Mostrar mensaje de confirmacion

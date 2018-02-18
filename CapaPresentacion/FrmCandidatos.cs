@@ -80,6 +80,7 @@ namespace CapaPresentacion
             this.txtCapacitaciones.ReadOnly = true;
             this.txtCompetencias.ReadOnly = true;
             this.txtExperiencia.ReadOnly = true;
+            this.txtIdCandidatos.ReadOnly = true;
 
             //Llenar combo box
             this.LlenarComboPuestos();
@@ -117,19 +118,19 @@ namespace CapaPresentacion
         //Habilitar los controles del formulario
         private void Habilitar(bool valor)
         {
-            this.txtIdCandidatos.ReadOnly = !valor;
+            //this.txtIdCandidatos.ReadOnly = !valor;
             this.txtCedula.ReadOnly = !valor;
             this.txtNombre.ReadOnly = !valor;
             this.txtApellido.ReadOnly = !valor;
             this.txtSalario.ReadOnly = !valor;
             this.txtRecomendado.ReadOnly = !valor;
-            this.txtIdioma.ReadOnly = !valor;
+            //this.txtIdioma.ReadOnly = !valor;
             this.btnBuscarIdioma.Enabled = valor;
-            this.txtCompetencias.ReadOnly = !valor;
+            //this.txtCompetencias.ReadOnly = !valor;
             this.btnBuscarCompetencias.Enabled = valor;
-            this.txtCapacitaciones.ReadOnly = !valor;
+            //this.txtCapacitaciones.ReadOnly = !valor;
             this.btnBuscarCapacitaciones.Enabled = valor;
-            this.txtExperiencia.ReadOnly = !valor;
+            //this.txtExperiencia.ReadOnly = !valor;
             this.btnBuscarExperiencia.Enabled = valor;
             this.cmbPuestos.Enabled = valor;
             this.btnCargar.Enabled = valor;

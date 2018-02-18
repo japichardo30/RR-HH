@@ -23,7 +23,8 @@ namespace CapaPresentacion
             this.ttMensaje.SetToolTip(this.txtNombre, "Ingrese el nombre del  puesto  el  cual  quiere agregar");
             this.ttMensaje.SetToolTip(this.txtSalarioMin, "Ingrese cual es su expectativa  minima salarial");
             this.ttMensaje.SetToolTip(this.txtSalarioMax, "Ingrese cual es su expectativa  maxima salarial");
-            
+            this.txtIdPuestos.Visible = false;
+
             //Contenido del ComboBox
             cmbNivel.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbNivel.Items.Add ("Seleccione una opcion");

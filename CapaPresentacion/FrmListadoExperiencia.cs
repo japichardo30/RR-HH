@@ -18,6 +18,7 @@ namespace CapaPresentacion
         public FrmListadoExperiencia()
         {
             InitializeComponent();
+            this.txtIdExperencia.Visible = false;
         }
 
         //Mostrar mensaje de confirmacion

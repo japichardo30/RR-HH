@@ -21,6 +21,7 @@ namespace CapaPresentacion
         public FrmCapacitaciones()
         {
             InitializeComponent();
+            this.txtIdCapacitaciones.Visible = false;
             //Contenido del ComboBox
             cmbNivel.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbNivel.Items.Add("Grado");

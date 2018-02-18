@@ -55,6 +55,7 @@
     <Compile Include="DCapacitaciones.cs" />
     <Compile Include="DCompetencias.cs" />
     <Compile Include="DDepartamentos.cs" />
+    <Compile Include="DEmpleados.cs" />
     <Compile Include="DExperencia.cs" />
     <Compile Include="DIdiomas.cs" />
     <Compile Include="DLogin.cs" />

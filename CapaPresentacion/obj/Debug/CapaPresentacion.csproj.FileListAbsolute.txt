@@ -90,3 +90,5 @@ C:\Users\USER\source\repos\RRHH\CapaPresentacion\bin\Debug\zh-Hans\Microsoft.Sql
 C:\Users\USER\source\repos\RRHH\CapaPresentacion\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
 C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmReporteCandidatos.resources
 C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmPosCandidatos.resources
+C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEmpleados.resources
+C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmNuevosEmpleados.resources

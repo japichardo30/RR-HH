@@ -228,5 +228,12 @@ namespace CapaPresentacion
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmEmpleados frm = new FrmEmpleados();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

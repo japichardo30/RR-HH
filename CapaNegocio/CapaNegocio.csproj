@@ -54,6 +54,7 @@
     <Compile Include="NCapacitaciones.cs" />
     <Compile Include="NCompetencias.cs" />
     <Compile Include="NDepartamentos.cs" />
+    <Compile Include="NEmpleados.cs" />
     <Compile Include="NExperencia.cs" />
     <Compile Include="NIdiomas.cs" />
     <Compile Include="NLogin.cs" />
