@@ -221,5 +221,12 @@ namespace CapaPresentacion
                 this.tsReclutamientos.Enabled = false;
             }
         }
+
+        private void candidatosPostuladosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPosCandidatos frm = new FrmPosCandidatos();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

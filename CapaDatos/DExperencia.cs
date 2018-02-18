@@ -17,7 +17,7 @@ namespace CapaDatos
         private DateTime _Fecha_fin;
         private decimal _Salario;
         private string _TextoBuscar;
-        private string _idcandidato;
+        private string _ObtenerIdExp;
 
         public int IdExperencia { get => _IdExperencia; set => _IdExperencia = value; }
         public string Empresa { get => _Empresa; set => _Empresa = value; }
@@ -26,7 +26,8 @@ namespace CapaDatos
         public DateTime Fecha_fin { get => _Fecha_fin; set => _Fecha_fin = value; }
         public decimal Salario { get => _Salario; set => _Salario = value; }
         public string TextoBuscar { get => _TextoBuscar; set => _TextoBuscar = value; }
-        public string Idcandidato { get => _idcandidato; set => _idcandidato = value; }
+        public string ObtenerIdExp { get => _ObtenerIdExp; set => _ObtenerIdExp = value; }
+
 
         //Constructor Vacio
         public DExperencia()
@@ -279,28 +280,6 @@ namespace CapaDatos
                 ParTextoBuscar.Value = Experencia.TextoBuscar;
                 SqlCmd.Parameters.Add(ParTextoBuscar);
 
-
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
-                SqlDat.Fill(DtResultado);
-            }
-            catch (Exception ex)
-            {
-                DtResultado = null;
-            }
-            return DtResultado;
-        }
-        //obtener id maximo
-        public DataTable GetMaxID()
-        {
-            DataTable DtResultado = new DataTable("experiencia");
-            SqlConnection SqlCon = new SqlConnection();
-            try
-            {
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
-                SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "select * from vw_get_max_id";
-                SqlCmd.CommandType = CommandType.Text;
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);

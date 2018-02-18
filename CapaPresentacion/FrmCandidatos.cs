@@ -72,7 +72,9 @@ namespace CapaPresentacion
             this.txtIdIdioma.Visible = false;
             this.txtIdCompetencias.Visible = false;
             this.txtIdCapacitaciones.Visible = false;
-            //this.txtIdExperiencia.Visible = false;
+            this.txtIdExperiencia.Visible = false;
+            this.txtIdCandidatos.Visible = false;
+            this.btnEliminar.Visible = false;
 
             this.txtIdioma.ReadOnly = true;
             this.txtCapacitaciones.ReadOnly = true;
@@ -447,6 +449,13 @@ namespace CapaPresentacion
         {
             FrmListadoExperiencia form = new FrmListadoExperiencia();
             form.ShowDialog();
+        }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            FrmReporteCandidatos frm = new FrmReporteCandidatos();
+            frm.IdCandidato = Convert.ToInt32(this.dataListado.CurrentRow.Cells["id_candidato"].Value);
+            frm.ShowDialog();
         }
     }
 }

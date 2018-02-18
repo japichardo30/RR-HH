@@ -45,6 +45,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnBuscarExperiencia = new System.Windows.Forms.Button();
             this.txtIdExperiencia = new System.Windows.Forms.TextBox();
+            this.experienciaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dBRRHHDataSet = new CapaPresentacion.DBRRHHDataSet();
             this.txtExperiencia = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -82,18 +84,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.erroricono = new System.Windows.Forms.ErrorProvider(this.components);
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
-            this.dBRRHHDataSet = new CapaPresentacion.DBRRHHDataSet();
-            this.experienciaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.experienciaTableAdapter = new CapaPresentacion.DBRRHHDataSetTableAdapters.ExperienciaTableAdapter();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.experienciaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBRRHHDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erroricono)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dBRRHHDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.experienciaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBuscar
@@ -186,6 +186,7 @@
             this.btnImprimir.TabIndex = 4;
             this.btnImprimir.Text = "&Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // btnEliminar
             // 
@@ -299,6 +300,16 @@
             this.txtIdExperiencia.Name = "txtIdExperiencia";
             this.txtIdExperiencia.Size = new System.Drawing.Size(39, 20);
             this.txtIdExperiencia.TabIndex = 42;
+            // 
+            // experienciaBindingSource
+            // 
+            this.experienciaBindingSource.DataMember = "Experiencia";
+            this.experienciaBindingSource.DataSource = this.dBRRHHDataSet;
+            // 
+            // dBRRHHDataSet
+            // 
+            this.dBRRHHDataSet.DataSetName = "DBRRHHDataSet";
+            this.dBRRHHDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtExperiencia
             // 
@@ -502,6 +513,7 @@
             // 
             // cmbPuestos
             // 
+            this.cmbPuestos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPuestos.FormattingEnabled = true;
             this.cmbPuestos.Location = new System.Drawing.Point(464, 245);
             this.cmbPuestos.Name = "cmbPuestos";
@@ -647,16 +659,6 @@
             // 
             this.ttMensaje.IsBalloon = true;
             // 
-            // dBRRHHDataSet
-            // 
-            this.dBRRHHDataSet.DataSetName = "DBRRHHDataSet";
-            this.dBRRHHDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // experienciaBindingSource
-            // 
-            this.experienciaBindingSource.DataMember = "Experiencia";
-            this.experienciaBindingSource.DataSource = this.dBRRHHDataSet;
-            // 
             // experienciaTableAdapter
             // 
             this.experienciaTableAdapter.ClearBeforeFill = true;
@@ -680,10 +682,10 @@
             this.tabPage2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.experienciaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBRRHHDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erroricono)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dBRRHHDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.experienciaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

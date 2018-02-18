@@ -14,8 +14,6 @@ namespace CapaPresentacion
 {
     public partial class FrmListadoExperiencia : MetroFramework.Forms.MetroForm
     {
-        public int idExperiencia = 0;
-        public bool btnOk = false;
 
         public FrmListadoExperiencia()
         {
@@ -66,7 +64,6 @@ namespace CapaPresentacion
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            btnOk = true;
             try
             {
                 string rpta = "";
@@ -78,12 +75,7 @@ namespace CapaPresentacion
                 else
                 {
                     rpta = NExperencia.Insertar(this.txtEmpresa.Text.Trim().ToUpper(), this.txtPuesto.Text.Trim().ToUpper(), this.dtpFechaInicio.Value.Date, this.dtpFechaFin.Value.Date, Convert.ToDecimal(this.txtSalario.Text));
-                    FrmCandidatos form = FrmCandidatos.GetInstancia();
-                    string par1, par2;
-                    par1 = Convert.ToString(idExperiencia);
-                    par2 = Convert.ToString(this.txtPuesto.Text);
-                    form.setExperiencia(par1, par2);
-                    this.Hide();
+                    
                 }
 
                 if (rpta.Equals("OK"))
@@ -128,6 +120,16 @@ namespace CapaPresentacion
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataListado_DoubleClick(object sender, EventArgs e)
+        {
+            FrmCandidatos form = FrmCandidatos.GetInstancia();  
+            string par1, par2;
+            par1 = Convert.ToString(this.dataListado.CurrentRow.Cells["id_experiencia"].Value);
+            par2 = Convert.ToString(this.dataListado.CurrentRow.Cells["Puesto_ocupado"].Value);
+            form.setExperiencia(par1, par2);
+            this.Close();
         }
     }
 }

@@ -45,6 +45,13 @@ namespace CapaNegocio
             return new DExperencia().Mostrar();
         }
 
+       /* public static string BuscarId(int id)
+       {
+           DExperencia Obj = new DExperencia();
+           Obj.
+           return Obj.BuscarId(Obj);
+       }*/
+
         public static DataTable BuscarNombre(string textobuscar)
         {
             DExperencia Obj = new DExperencia();
