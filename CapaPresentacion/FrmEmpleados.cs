@@ -29,6 +29,8 @@ namespace CapaPresentacion
             this.ttMensaje.SetToolTip(this.cmbPuestos, "Seleccione el puesto por el cual quiere optar");
             this.ttMensaje.SetToolTip(this.cmbDepartamentos, "Seleccione el departamento al que correspondera");
 
+            this.txtIdEmpleados.Visible = false;
+
             //Llenar combo box
             this.LlenarComboPuestos();
             this.LlenarComboDepartamentos();

@@ -125,5 +125,23 @@ namespace CapaPresentacion
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
+
+        private void dataListado_DoubleClick(object sender, EventArgs e)
+        {
+            FrmNuevosEmpleados form = FrmNuevosEmpleados.GetInstancia();
+            string par1, par2, par3, par4, par5, par6, par7, par8, par9;
+            par1 = Convert.ToString(this.dataListado.CurrentRow.Cells["Cedula"].Value);
+            par2 = Convert.ToString(this.dataListado.CurrentRow.Cells["Nombre"].Value);
+            par3 = Convert.ToString(this.dataListado.CurrentRow.Cells["Apellido"].Value);
+            //par4 = Convert.ToString(this.dataListado.CurrentRow.Cells["Puestos"].Value);
+            par5 = Convert.ToString(this.dataListado.CurrentRow.Cells["Idiomas"].Value);
+            par6 = Convert.ToString(this.dataListado.CurrentRow.Cells["Competencias"].Value);
+            par7 = Convert.ToString(this.dataListado.CurrentRow.Cells["Capacitaciones"].Value);
+            par8 = Convert.ToString(this.dataListado.CurrentRow.Cells["Experiencia"].Value);
+            par9 = Convert.ToString(this.dataListado.CurrentRow.Cells["Recomendado"].Value);
+            form.setCandidatos(par1, par2, par3, par5, par6, par7, par8, par9);
+            this.Close();
+            form.ShowDialog();
+        }
     }
 }
