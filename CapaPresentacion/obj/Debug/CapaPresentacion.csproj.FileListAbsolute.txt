@@ -92,3 +92,4 @@ C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmR
 C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmPosCandidatos.resources
 C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEmpleados.resources
 C:\Users\USER\source\repos\RRHH\CapaPresentacion\obj\Debug\CapaPresentacion.FrmNuevosEmpleados.resources
+C:\Users\USER\source\repos\RRHH\CapaPresentacion\bin\Debug\DGV2Printer.dll

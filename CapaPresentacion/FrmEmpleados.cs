@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaNegocio;
+using DGV2Printer;
 
 namespace CapaPresentacion
 {
@@ -365,6 +366,23 @@ namespace CapaPresentacion
 
 
             this.tabControl1.SelectedIndex = 1;
+        }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            bool btImprimir = true;
+            if (btImprimir == true)
+            {
+                this.dataListado.Columns[10].Visible = false;
+                this.dataListado.Columns[12].Visible = false;
+                PrintDataGridView pr = new PrintDataGridView(dataListado);
+                pr.isRightToLeft = false;
+                pr.ReportHeader = "SISTEMA DE RECLUTAMIENTO DE PERSONAL(RRHH)";
+                pr.ReportFooter = "2018";
+                pr.Print();
+            }
+            btImprimir = false;
+
         }
     }
 }

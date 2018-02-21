@@ -283,7 +283,7 @@ namespace CapaDatos
                 SqlParameter ParIdCapacitaciones = new SqlParameter();
                 ParIdCapacitaciones.ParameterName = "@idcapacitaciones";
                 ParIdCapacitaciones.SqlDbType = SqlDbType.VarChar;
-                ParIdCapacitaciones.Value = Candidatos.IdPuestos;
+                ParIdCapacitaciones.Value = Candidatos.IdCapacitaciones;
                 SqlCmd.Parameters.Add(ParIdCapacitaciones);
 
 

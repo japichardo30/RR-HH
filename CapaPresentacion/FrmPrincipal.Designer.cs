@@ -73,6 +73,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.salirDelSistemaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -99,7 +100,8 @@
             // mnuSistema
             // 
             this.mnuSistema.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salirDelSistemaToolStripMenuItem});
+            this.salirDelSistemaToolStripMenuItem,
+            this.salirDelSistemaToolStripMenuItem1});
             this.mnuSistema.Image = global::CapaPresentacion.Properties.Resources.if_user_group_285648;
             this.mnuSistema.Name = "mnuSistema";
             this.mnuSistema.Size = new System.Drawing.Size(67, 20);
@@ -107,10 +109,10 @@
             // 
             // salirDelSistemaToolStripMenuItem
             // 
-            this.salirDelSistemaToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.if_22_171495;
+            this.salirDelSistemaToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.if_exit_62834;
             this.salirDelSistemaToolStripMenuItem.Name = "salirDelSistemaToolStripMenuItem";
             this.salirDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.salirDelSistemaToolStripMenuItem.Text = "Salir del sistema";
+            this.salirDelSistemaToolStripMenuItem.Text = "Logout";
             this.salirDelSistemaToolStripMenuItem.Click += new System.EventHandler(this.salirDelSistemaToolStripMenuItem_Click);
             // 
             // mnuReclutamiento
@@ -437,6 +439,14 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(245, 17);
             this.toolStripStatusLabel.Text = "SISTEMA DE RECLUTAMIENTO DE PERSONAL";
             // 
+            // salirDelSistemaToolStripMenuItem1
+            // 
+            this.salirDelSistemaToolStripMenuItem1.Image = global::CapaPresentacion.Properties.Resources.if_22_171495;
+            this.salirDelSistemaToolStripMenuItem1.Name = "salirDelSistemaToolStripMenuItem1";
+            this.salirDelSistemaToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
+            this.salirDelSistemaToolStripMenuItem1.Text = "Salir del sistema";
+            this.salirDelSistemaToolStripMenuItem1.Click += new System.EventHandler(this.salirDelSistemaToolStripMenuItem1_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -511,6 +521,7 @@
         private System.Windows.Forms.ToolStripButton tsReclutamientos;
         private System.Windows.Forms.ToolStripMenuItem departamentosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem candidatosPostuladosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirDelSistemaToolStripMenuItem1;
     }
 }
 

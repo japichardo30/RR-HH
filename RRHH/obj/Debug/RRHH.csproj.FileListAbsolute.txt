@@ -127,3 +127,4 @@ C:\Users\USER\source\repos\RRHH\RRHH\bin\Debug\zh-CHS\Microsoft.ReportViewer.Win
 C:\Users\USER\source\repos\RRHH\RRHH\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\USER\source\repos\RRHH\RRHH\obj\Debug\RRHH.exe.config
 C:\Users\USER\source\repos\RRHH\RRHH\obj\Debug\RRHH.Form1.resources
+C:\Users\USER\source\repos\RRHH\RRHH\bin\Debug\DGV2Printer.dll

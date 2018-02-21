@@ -49,6 +49,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkEstado = new System.Windows.Forms.CheckBox();
+            this.dtpFechaIngreso = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cmbDepartamentos = new System.Windows.Forms.ComboBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCargar = new System.Windows.Forms.Button();
             this.pbImagen = new System.Windows.Forms.PictureBox();
@@ -67,10 +71,6 @@
             this.txtIdEmpleados = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cmbDepartamentos = new System.Windows.Forms.ComboBox();
-            this.dtpFechaIngreso = new System.Windows.Forms.DateTimePicker();
-            this.chkEstado = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.erroricono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.experienciaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBRRHHDataSet)).BeginInit();
@@ -203,6 +203,7 @@
             this.btnImprimir.TabIndex = 4;
             this.btnImprimir.Text = "&Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // btnEliminar
             // 
@@ -280,6 +281,42 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Empleados";
+            // 
+            // chkEstado
+            // 
+            this.chkEstado.AutoSize = true;
+            this.chkEstado.Location = new System.Drawing.Point(551, 186);
+            this.chkEstado.Name = "chkEstado";
+            this.chkEstado.Size = new System.Drawing.Size(51, 17);
+            this.chkEstado.TabIndex = 43;
+            this.chkEstado.Text = "False";
+            this.chkEstado.UseVisualStyleBackColor = true;
+            this.chkEstado.CheckedChanged += new System.EventHandler(this.chkEstado_CheckedChanged);
+            // 
+            // dtpFechaIngreso
+            // 
+            this.dtpFechaIngreso.Location = new System.Drawing.Point(379, 222);
+            this.dtpFechaIngreso.Name = "dtpFechaIngreso";
+            this.dtpFechaIngreso.Size = new System.Drawing.Size(223, 20);
+            this.dtpFechaIngreso.TabIndex = 42;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 221);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 13);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "Departamento:";
+            // 
+            // cmbDepartamentos
+            // 
+            this.cmbDepartamentos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDepartamentos.FormattingEnabled = true;
+            this.cmbDepartamentos.Location = new System.Drawing.Point(120, 221);
+            this.cmbDepartamentos.Name = "cmbDepartamentos";
+            this.cmbDepartamentos.Size = new System.Drawing.Size(178, 21);
+            this.cmbDepartamentos.TabIndex = 40;
             // 
             // btnLimpiar
             // 
@@ -459,42 +496,6 @@
             this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 1;
             this.label4.Text = "Cedula: ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 221);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 13);
-            this.label3.TabIndex = 41;
-            this.label3.Text = "Departamento:";
-            // 
-            // cmbDepartamentos
-            // 
-            this.cmbDepartamentos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbDepartamentos.FormattingEnabled = true;
-            this.cmbDepartamentos.Location = new System.Drawing.Point(120, 221);
-            this.cmbDepartamentos.Name = "cmbDepartamentos";
-            this.cmbDepartamentos.Size = new System.Drawing.Size(178, 21);
-            this.cmbDepartamentos.TabIndex = 40;
-            // 
-            // dtpFechaIngreso
-            // 
-            this.dtpFechaIngreso.Location = new System.Drawing.Point(379, 222);
-            this.dtpFechaIngreso.Name = "dtpFechaIngreso";
-            this.dtpFechaIngreso.Size = new System.Drawing.Size(223, 20);
-            this.dtpFechaIngreso.TabIndex = 42;
-            // 
-            // chkEstado
-            // 
-            this.chkEstado.AutoSize = true;
-            this.chkEstado.Location = new System.Drawing.Point(551, 186);
-            this.chkEstado.Name = "chkEstado";
-            this.chkEstado.Size = new System.Drawing.Size(51, 17);
-            this.chkEstado.TabIndex = 43;
-            this.chkEstado.Text = "False";
-            this.chkEstado.UseVisualStyleBackColor = true;
-            this.chkEstado.CheckedChanged += new System.EventHandler(this.chkEstado_CheckedChanged);
             // 
             // FrmEmpleados
             // 

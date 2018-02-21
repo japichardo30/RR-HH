@@ -31,6 +31,7 @@ namespace CapaNegocio
         {
             DCandidatos Obj = new DCandidatos();
             Obj.IdCandidatos = idcandidato;
+            Obj.Cedula = cedula;
             Obj.Nombre = nombre;
             Obj.Apellido = apellido;
             Obj.Salario = salario;

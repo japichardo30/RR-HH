@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework;
 using CapaNegocio;
+using DGV2Printer;
 
 namespace CapaPresentacion
 {
@@ -71,7 +72,7 @@ namespace CapaPresentacion
             //Manejo de campos que llaman a otra tabla de la base de datos
             this.txtIdIdioma.Visible = false;
             this.txtIdCompetencias.Visible = false;
-            this.txtIdCapacitaciones.Visible = false;
+            this.txtIdCapacitaciones.Visible = true;
             this.txtIdExperiencia.Visible = false;
             this.txtIdCandidatos.Visible = false;
             this.btnEliminar.Visible = false;
@@ -258,7 +259,7 @@ namespace CapaPresentacion
                     erroricono.SetError(txtApellido, "Ingrese un valor");
                     erroricono.SetError(txtSalario, "Ingrese un valor");
                 }
-                else
+                else if (validarCampos() == 0 && validarCedula(txtCedula.Text) == 0)
                 {
                     System.IO.MemoryStream ms = new System.IO.MemoryStream();
                     this.pbImagen.Image.Save(ms,System.Drawing.Imaging.ImageFormat.Png);
@@ -277,9 +278,9 @@ namespace CapaPresentacion
                         rpta = NCandidatos.Editar(Convert.ToInt32(this.txtIdCandidatos.Text), this.txtCedula.Text.Trim(), 
                             this.txtNombre.Text.Trim().ToUpper(), this.txtApellido.Text.Trim().ToUpper(), 
                             Convert.ToDecimal(this.txtSalario.Text), image, this.txtRecomendado.Text.Trim().ToUpper(), 
-                            Convert.ToInt32(this.txtIdIdioma.Text), Convert.ToInt32(this.txtCompetencias.Text),
-                            Convert.ToInt32(this.txtExperiencia.Text), Convert.ToInt32(this.cmbPuestos.SelectedValue),
-                            Convert.ToInt32(this.txtCapacitaciones.Text));
+                            Convert.ToInt32(this.txtIdIdioma.Text), Convert.ToInt32(this.txtIdCompetencias.Text),
+                            Convert.ToInt32(this.txtIdExperiencia.Text), Convert.ToInt32(this.cmbPuestos.SelectedValue),
+                            Convert.ToInt32(this.txtIdCapacitaciones.Text));
                     }
 
                     if (rpta.Equals("OK"))
@@ -366,7 +367,7 @@ namespace CapaPresentacion
             this.txtIdCompetencias.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["id_competencias"].Value);
             this.txtCompetencias.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["Competencias"].Value);
             this.txtIdCapacitaciones.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["id_capacitaciones"].Value);
-            this.txtIdCapacitaciones.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["Capacitaciones"].Value);
+            this.txtCapacitaciones.Text = Convert.ToString(this.dataListado.CurrentRow.Cells["Capacitaciones"].Value);
             this.cmbPuestos.SelectedValue = Convert.ToString(this.dataListado.CurrentRow.Cells["id_puesto"].Value);
 
 
@@ -454,9 +455,97 @@ namespace CapaPresentacion
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-            FrmReporteCandidatos frm = new FrmReporteCandidatos();
-            frm.IdCandidato = Convert.ToInt32(this.dataListado.CurrentRow.Cells["id_candidato"].Value);
-            frm.ShowDialog();
+            PrintDataGridView pr = new PrintDataGridView(dataListado);
+            pr.isRightToLeft = false;
+            pr.ReportHeader = "SISTEMA DE RECLUTAMIENTO DE PERSONAL(RRHH)";
+            pr.ReportFooter = "2018";
+            pr.Print();
+        }
+
+        /* *************************************************************************************
+        *                              VALIDACIONES PARA EL FORM                               *
+        *                                                                                      *
+        *****************************************************************************************/
+        private int validarCampos()
+        {
+            if (txtNombre.Text == "" || txtCedula.Text == "" || txtApellido.Text == "" || txtSalario.Text == "" || txtIdioma.Text == "" || cmbPuestos.SelectedIndex == -1 || txtCompetencias.Text == "" || txtCapacitaciones.Text == "")
+            {
+                MessageBox.Show("Verifique que todos los campos esten llenos");
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+        /*private int cedulaRepetidaCandidato()
+        {
+            var query = (from p in NCandidatos.
+                         where p.cedula == txtCedula.Text
+                         select p).FirstOrDefault();
+            if (query != null)
+            {
+                MessageBox.Show("La cedula ya existe en el sistema");
+                return NO_ES_VALIDO;
+
+            }
+            else
+            {
+                return ES_VALIDO;
+            }
+        }
+        private int cedulaRepetidaEmpleado()
+        {
+            var query = (from p in db.empleados
+                         where p.cedula == txtCedula.Text
+                         select p).FirstOrDefault();
+            if (query != null)
+            {
+                MessageBox.Show("La cedula ya existe en el sistema");
+                return NO_ES_VALIDO;
+
+            }
+            else
+            {
+                return ES_VALIDO;
+            }
+        }*/
+
+        private int validarCedula(string cedula)
+        {
+            char[] arr;
+            arr = new char[20];
+            arr = cedula.ToCharArray();
+
+            if (cedula.Count() != 13)
+            {
+                MessageBox.Show("Cedula invalida");
+                return 1;
+            }
+
+            if (arr[3] != '-')
+            {
+                MessageBox.Show("Cedula invalida");
+                return 1;
+            }
+
+            if (arr[11] != '-')
+            {
+                MessageBox.Show("Cedula invalida");
+                return 1;
+            }
+            else
+            {
+                /*if (cedulaRepetidaCandidato() == NO_ES_VALIDO)
+                {
+                    return 1;
+                }
+                if (cedulaRepetidaEmpleado() == NO_ES_VALIDO)
+                {
+                    return 1;
+                }*/
+                return 0;
+            }
         }
     }
 }

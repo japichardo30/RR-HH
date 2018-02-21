@@ -127,11 +127,20 @@
   <data name="if_business_2799208" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_business_2799208.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_98_111048" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_98_111048.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="candidate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\candidate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_Arrows_3_2638360" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_Arrows_3_2638360.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_file_delete_48762" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_file_delete_48762.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if_user_close_add_1037471" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_user_close_add_1037471.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_applications-office_118837" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_applications-office_118837.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if_skills_44678" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_skills_44678.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,23 +172,17 @@
   <data name="if_user_285655" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_user_285655.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_Login Manager_7261" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_Login Manager_7261.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="transparente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\transparente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_applications-office_118837" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_applications-office_118837.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if_98_111048" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_98_111048.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if_file_add_48761" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_file_add_48761.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_file_delete_48762" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_file_delete_48762.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if_user_close_add_103747" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_user_close_add_103747.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,10 +193,10 @@
   <data name="file" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_Arrows_3_2638360" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_Arrows_3_2638360.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if_Login Manager_7261" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_Login Manager_7261.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="candidate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\candidate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if_exit_62834" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_exit_62834.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

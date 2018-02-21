@@ -117,7 +117,9 @@ namespace CapaPresentacion
 
         private void salirDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
+            FrmLogin frm = new FrmLogin();
+            frm.Show();
         }
 
         private void candidatosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -234,6 +236,11 @@ namespace CapaPresentacion
             FrmEmpleados frm = new FrmEmpleados();
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void salirDelSistemaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

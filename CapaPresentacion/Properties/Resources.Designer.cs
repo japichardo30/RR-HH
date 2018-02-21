@@ -183,6 +183,16 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_exit_62834 {
+            get {
+                object obj = ResourceManager.GetObject("if_exit_62834", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_file_add_48761 {
             get {
                 object obj = ResourceManager.GetObject("if_file_add_48761", resourceCulture);
