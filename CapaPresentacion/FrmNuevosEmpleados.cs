@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -71,7 +72,7 @@ namespace CapaPresentacion
             this.LlenarComboPuestos();
 
             //Inhabilitar textbox
-            this.txtCedula.ReadOnly = true;
+            this.txtCedula.ReadOnly = false;
             this.txtNombre.ReadOnly = true;
             this.txtApellido.ReadOnly = true;
             this.txtRecomendado.ReadOnly = true;
@@ -136,6 +137,15 @@ namespace CapaPresentacion
 
         private void metroButton2_Click(object sender, EventArgs e)
         {
+            MailMessage mail = new MailMessage("josealexis_98@hotmail.com", "josealexis_98@hotmail.com");
+            /*SmtpClient client = new SmtpClient();
+            client.Port = 25;
+            client.DeliveryMethod = SmtpDeliveryMethod.Network;
+            client.UseDefaultCredentials = false;
+            client.Host = "smtp.hotmail.com";
+            mail.Subject = "Servicio de Notificaciones";
+            mail.Body = "Felicidades Candidato usted ahora es parte de nuestra gran familia";
+            client.Send(mail);*/
             this.Close();
         }
 
@@ -164,14 +174,37 @@ namespace CapaPresentacion
 
                     if (rpta.Equals("OK"))
                     {
-                        if (this.IsNuevo)
-                        {
-                            this.MensajeOk("Se inserto de forma correcta el registro");
+ 
+                         //Aqui Eliminara de la tabla candidatos
+                         string Codigo;
+                         string RESPUESTA = "";
+                         Codigo = Convert.ToString(this.txtCedula.Text);
+                         RESPUESTA = NCandidatos.EliminarCanByCedula(Codigo);
+
+                         if (RESPUESTA.Equals("OK"))
+                         {
+                            this.MensajeOk("Felicitaciones, paso a ser parte de esta empresa!");
+                            // Command line argument must the the SMTP host.
+                            SmtpClient client = new SmtpClient();
+                            client.Port = 587;
+                            client.Host = "smtp.gmail.com";
+                            client.EnableSsl = true;
+                            client.Timeout = 10000;
+                            client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                            client.UseDefaultCredentials = false;
+                            client.Credentials = new System.Net.NetworkCredential("user@gmail.com", "password");
+
+                            MailMessage mm = new MailMessage("yuniorelfuerte.30@gmail.com", "alexpichar30@gmail.com", "test", "test");
+                            mm.BodyEncoding = UTF8Encoding.UTF8;
+                            mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
+
+                            client.Send(mm);
                         }
-                        else
-                        {
-                            this.MensajeOk("Se actualizo de forma correcta el registro");
-                        }
+                         else
+                         {
+                            this.MensajeError(RESPUESTA);
+                         }
+                          //this.MensajeOk("Se actualizo de forma correcta el registro");
                     }
                     else
                     {

@@ -339,6 +339,44 @@ namespace CapaDatos
             return rpta;
         }
 
+        //Metodo Eliminar por cedula
+        public string EliminarCanByCedula(DCandidatos Candidatos)
+        {
+            string rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //Codigo
+                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.Open();
+
+                //Establecer el comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "speliminar_candidatos_ced";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                //Recibe primer campo
+                SqlParameter ParEliCedula = new SqlParameter();
+                ParEliCedula.ParameterName = "@cedulaCandidato";
+                ParEliCedula.SqlDbType = SqlDbType.VarChar;
+                ParEliCedula.Value = Candidatos.Cedula;
+                SqlCmd.Parameters.Add(ParEliCedula);
+
+                //Ejecucion del comando
+                rpta = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "No se ingreso el registro";
+            }
+            catch (Exception ex)
+            {
+                rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return rpta;
+        }
+
         //Metodo Mostrar tabla
         public DataTable Mostrar()
         {

@@ -72,7 +72,7 @@ namespace CapaPresentacion
             //Manejo de campos que llaman a otra tabla de la base de datos
             this.txtIdIdioma.Visible = false;
             this.txtIdCompetencias.Visible = false;
-            this.txtIdCapacitaciones.Visible = true;
+            this.txtIdCapacitaciones.Visible = false;
             this.txtIdExperiencia.Visible = false;
             this.txtIdCandidatos.Visible = false;
             this.btnEliminar.Visible = false;

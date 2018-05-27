@@ -103,6 +103,7 @@ namespace CapaPresentacion
             this.dataListado.Columns[1].Visible = false;
             this.dataListado.Columns[6].Visible = false;
             this.dataListado.Columns[8].Visible = false;
+            this.dataListado.Columns[12].Visible = false;
         }
 
         //Metodo mostrar

@@ -85,7 +85,7 @@ namespace CapaDatos
                 SqlParameter ParCedula = new SqlParameter();
                 ParCedula.ParameterName = "@cedula";
                 ParCedula.SqlDbType = SqlDbType.VarChar;
-                ParCedula.Size = (13);
+                ParCedula.Size = (15);
                 ParCedula.Value = Empleados.Cedula;
                 SqlCmd.Parameters.Add(ParCedula);
 

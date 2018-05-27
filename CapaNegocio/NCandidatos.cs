@@ -52,6 +52,15 @@ namespace CapaNegocio
             return Obj.Eliminar(Obj);
         }
 
+        public static string EliminarCanByCedula(string cedula)
+        {
+            DCandidatos Obj = new DCandidatos();
+            Obj.Cedula = cedula;
+            return Obj.EliminarCanByCedula(Obj);
+        }
+
+
+
         public static DataTable Mostrar()
         {
             return new DCandidatos().Mostrar();
